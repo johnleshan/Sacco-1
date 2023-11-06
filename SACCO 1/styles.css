@@ -1,0 +1,151 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-image: url('images/header2-background.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: orangered;
+    text-align: center;
+    font-weight: bolder;
+    padding: 100px 20px 60px;
+    list-style: 1.5;
+}
+
+/* Navigation bar */
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+/* Sections */
+/*
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+*/
+
+section {
+    background-size: cover; /* Center and scale the background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px; /* Add padding to create separation between the background image and content */
+    color: #fff; /* Text color for all sections */
+    text-align: center;
+    position: relative;
+}
+
+/* Content section */
+.content {
+    background-image: url('images/content-background.jpg'); /* Add the background image for the content section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: deeppink;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.content h2 {
+    font-size: 24px;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards; /* Add animation to the header text */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+.about {
+    background-image: url('images/about-background.jpg'); /* Add background image for the About section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    color: #fff;
+    text-align: center;
+}
+
+.services {
+    background-image: url('images/services-background.jpg'); /* Add background image for the Services section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: #fff;
+    text-align: center;
+}
+
+products {
+    background-image: url('images/products-background.jpg'); /* Add background image for the Products section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    text-align: center;
+}
+
+savings {
+    background-image: url('images/savings-background.jpg'); /* Add background image for the Savings section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;    
+    text-align: center;
+}
+
+contact {
+    background-image: url('images/contact-background.jpg'); /* Add background image for the Contact section */
+    background-size: cover;
+    background-position: center;
+    color: #fff;    
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
